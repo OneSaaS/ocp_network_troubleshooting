@@ -1,0 +1,2 @@
+In this step, you will use the listNetNamespace.sh script to get id of the netnamespace and run a tcpdump from within that namespace.  This effectively captures from within the container.
+
