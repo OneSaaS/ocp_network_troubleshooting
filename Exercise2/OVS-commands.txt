@@ -3,3 +3,4 @@ Use f to go through different fields
 
 ovs-vsctl show
 
+ovs-vsctl list-br
