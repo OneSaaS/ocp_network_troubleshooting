@@ -4,3 +4,5 @@ Use f to go through different fields
 ovs-vsctl show
 
 ovs-vsctl list-br
+
+ovs-ofctl dump-flows br-ex,br-int
