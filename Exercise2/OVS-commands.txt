@@ -1,3 +1,5 @@
 ovs-dpctl-top
 Use f to go through different fields
 
+ovs-vsctl show
+
