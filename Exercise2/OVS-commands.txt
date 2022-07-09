@@ -8,3 +8,6 @@ ovs-vsctl list-br
 ovs-ofctl dump-flows br-ex,br-int
 
 ovs-dpctl dump-flows
+
+ovs-ofctl show br-int
+
