@@ -17,3 +17,4 @@ ovs-ofctl dump-flows br-int
 
 ovs-appctl ovs/route/show
 
+ovs-appctl ovs/route/lookup 10.129.0.13
