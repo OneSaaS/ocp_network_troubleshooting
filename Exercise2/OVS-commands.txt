@@ -11,3 +11,5 @@ ovs-dpctl dump-flows
 
 ovs-ofctl show br-int
 
+ovs-ofctl dump-ports br-int 37
+
