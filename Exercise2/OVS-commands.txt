@@ -14,3 +14,6 @@ ovs-ofctl show br-int
 ovs-ofctl dump-ports br-int 37
 
 ovs-ofctl dump-flows br-int
+
+ovs-appctl ovs/route/show
+
