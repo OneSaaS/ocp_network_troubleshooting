@@ -1,21 +1,21 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: part1-httpd  
+  name: httpd1 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: httpd
+      app: httpd1
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: part1-httpd
-        deploymentconfig: httpd
+        app: httpd1
+        deploymentconfig: httpd1
     spec:
       containers:
-        - name: part1-httpd
+        - name: httpd1
           image: quay.io/kcalliga/httpd-8080
           ports:
             - containerPort: 8080
