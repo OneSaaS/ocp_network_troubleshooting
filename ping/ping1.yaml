@@ -12,11 +12,11 @@ spec:
       creationTimestamp: null
       labels:
         app: ping1
-        deploymentconfig: httpd1
+        deploymentconfig: ping
     spec:
       containers:
         - name: ping1
-          image: quay.io/kcalliga/ping-container
+          image: busybox
           resources: {}
           terminationMessagePath: /dev/termination-log
           terminationMessagePolicy: File
