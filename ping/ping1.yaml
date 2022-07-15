@@ -15,7 +15,7 @@ spec:
         deploymentconfig: httpd1
     spec:
       containers:
-        - name: httpd1
+        - name: ping1
           image: quay.io/kcalliga/ping-container
           resources: {}
           terminationMessagePath: /dev/termination-log
