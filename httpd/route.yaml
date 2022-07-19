@@ -4,7 +4,6 @@ metadata:
   labels:
     app: httpd
   name: httpd
-  namespace: httpd
 spec:
   host: httpd-httpd.apps.book.ocp-poc-demo.com
   port:
