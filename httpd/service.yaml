@@ -5,7 +5,6 @@ metadata:
   labels:
     app: httpd
   name: httpd
-  namespace: httpd
 spec:
   internalTrafficPolicy: Cluster
   ipFamilies:
