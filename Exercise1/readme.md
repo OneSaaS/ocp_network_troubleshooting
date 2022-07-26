@@ -27,5 +27,9 @@
 14.  How long did it take before the endpoint was removed from the service?
 15.  Either bring the network back up on the node or see if it has fully rebooted and is ready (oc get nodes).
 16.  This process showed how a workload will behave if it doesn't have the appropriate checks in place.  We will now add a readiness and liveliness check to this deployment which will allow Openshift to remediate the fact that one of the pods is failing more quickly.
-17.  
 
+********* Explain Liveliness and Readiness Checks ************************
+
+17.  oc apply -f httpd-replicas-probes.yaml (ignore warning message)
+18.  Remove cable or reboot node again.
+19.  Note the different behavior.  Endpoints of failing node get removed more quickly and new pods are deployed to meet the number of replicas required (3) by deployment.
