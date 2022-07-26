@@ -13,4 +13,7 @@
     oc edit deployment
         This will bring up a vi editor.  Search for replicas and change the number to 3
         Save (:wq!)
+9.  Now, run the "oc get po -o wide" command again.  You will see three pods running and the node that each is running on. Even though, these 3 pods may showup on three different nodes, there is no guarantee on which node the pods will land on.  Ideally, we would want pods on separate nodes.  This is only guaranteed if we setup a daemonset or an affinity rule.
+10.  Run, "oc get ep".  This will now show the pod IPs that are being load-balanced behind the service.
+11.  
 
