@@ -18,7 +18,6 @@ spec:
       containers:
         - name: httpd
           image: quay.io/kcalliga/httpd-ping-8080
-          
           command:
             - sleep
             - infinity
@@ -26,22 +25,22 @@ spec:
             - name: httpd-port
               containerPort: 8080
               protocol: TCP
-           livenessProbe:
-             failureThreshold: 3
-             initialDelaySeconds: 15
-             periodSeconds: 20
-             successThreshold: 1
-             tcpSocket:
-               port: 8080
-             timeoutSeconds: 1
-           readinessProbe:
-             failureThreshold: 3
-             initialDelaySeconds: 5
-             periodSeconds: 10
-             successThreshold: 1
-             tcpSocket:
-               port: 8080
-             timeoutSeconds: 1
+          livenessProbe:
+            failureThreshold: 3
+            initialDelaySeconds: 15
+            periodSeconds: 20
+            successThreshold: 1
+            tcpSocket:
+              port: 8080
+            timeoutSeconds: 1
+          readinessProbe:
+            failureThreshold: 3
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            successThreshold: 1
+            tcpSocket:
+              port: 8080
+            timeoutSeconds: 1
           resources: {}
           terminationMessagePath: /dev/termination-log
           terminationMessagePolicy: File
