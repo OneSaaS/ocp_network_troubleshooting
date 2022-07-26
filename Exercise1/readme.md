@@ -8,3 +8,6 @@
     oc get svc
 7.  The pod IPs will be end-points to the service.  Let's look at endpoints
     oc get ep (or oc get endpoints)
+    Take note of the pod IPs and the node that this pod is on
+8.  Now, we will edit this deployment to increase the number of replicas to 3
+    oc edit deployment
