@@ -11,3 +11,6 @@
     Take note of the pod IPs and the node that this pod is on
 8.  Now, we will edit this deployment to increase the number of replicas to 3
     oc edit deployment
+        This will bring up a vi editor.  Search for replicas and change the number to 3
+        Save (:wq!)
+
