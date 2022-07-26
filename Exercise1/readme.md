@@ -15,7 +15,9 @@
         Save (:wq!)
 9.  Now, run the "oc get po -o wide" command again.  You will see three pods running and the node that each is running on. Even though, these 3 pods may showup on three different nodes, there is no guarantee on which node the pods will land on.  Ideally, we would want pods on separate nodes.  This is only guaranteed if we setup a daemonset or an affinity rule.
 10.  Run, "oc get ep".  This will now show the pod IPs that are being load-balanced behind the service.
+
 ************************** I may demonstrate this part (11 through 13) in my environment **************************************
+
 11.  If possible, pull the network cable or reboot one of the nodes that is running an instance of the pod.
 12.  As this is happening, notice how long it takes before the node changes from a ready state to a nonready state.  Run "oc get nodes" to see this.
 13.  Also, notice how long (if at all) it takes for the pod endpoint to be removed from the service.  Run "oc get ep" to see this.
