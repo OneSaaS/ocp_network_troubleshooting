@@ -1,4 +1,7 @@
 1.  oc new-project exercise1
+
+************ The object definitions for steps 2-4 will be described some *****************
+
 2.  oc create -f httpd.yaml
 3.  oc create -f service.yaml
 4.  oc create -f route.yaml
