@@ -18,9 +18,6 @@ spec:
       containers:
         - name: httpd
           image: quay.io/kcalliga/httpd-8080
-          command:
-            - sleep
-            - infinity
           ports:
             - name: httpd-port
               containerPort: 8080
