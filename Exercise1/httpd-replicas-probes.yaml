@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: httpd
-          image: quay.io/kcalliga/httpd-ping-8080
+          image: quay.io/kcalliga/httpd-8080
           ports:
             - name: httpd-port
               containerPort: 8080
